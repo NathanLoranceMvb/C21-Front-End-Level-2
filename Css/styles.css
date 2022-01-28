@@ -21,7 +21,6 @@ body{
     background-color: white;
     margin: 0 auto;
     max-width: 1795px ;
-    padding: 0 40px;
 }
 
 header{
@@ -30,23 +29,68 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 8px rgb(0 2 8 / 6%);
+    padding: 0 40px;
+    margin-bottom: 40px;
 }
 
 .logo{
-
+    margin-top: 10px;
 }
 
-nav.main-menu{
-
+ul.main-menu{
+    list-style: none;
+    color: #4e3b4b;
+    padding-right: 15px;
 }
 
-nav.socials{
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
 
+li.menu-item::after{
+    content: " | ";
+    padding-left: 10px;
+    color: #eaeaea;
+}
+
+li.menu-item{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+li.menu-item a{
+    color: #4e3b4b;
+}
+
+li.menu-item a:hover{
+    color: #ca404f;
+}
+
+ul.socials{
+    list-style: none;
+    color: #4e3b4b;
+}
+
+li.social-item a{
+    color: #4e3b4b;
+}
+
+li.social-item {
+    color: #4e3b4b;
+    display: inline-block;
+    padding-right: 5px;
+}
+
+li.social-item a:hover{
+    color: #ca404f;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Karla', sans-serif;
     font-style: normal;
+    font-weight: normal;
     color: #4e3b4b;
     line-height: 1.4;
 }
@@ -67,6 +111,17 @@ h4{
     line-height: 1.4;
 }
 
+button{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    height: 42px;
+    color: #ffff;
+    background-color: #ca404f;
+    padding: 0 20px;
+    line-height: 42px;
+    border: none;
+}
+
 a{
     font-family: 'Karla', sans-serif;
     font-size: 14px;
@@ -75,11 +130,64 @@ a{
     text-decoration: none;
 }
 
-button{
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    color: #ffff;
-    background-color: #ca404f;
-    line-height: 42px;
+main{
+padding: 0 100px 0 100px;
+background-image: url("../Images/background.png");
+background-repeat:no-repeat;
+background-position:center bottom;
 }
 
+.recepten{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.recept{
+    width: 1040px;
+    display: flex;
+}
+
+.description{
+    width: 485;
+    margin-right: 70px;
+}
+
+.description h4{
+    margin-top: 40px;
+}
+
+.description p{
+    margin: 60px 0;
+}
+
+.recept-image img{
+    width: 485px;
+}
+
+.resept-items{
+    width: 486px;
+    
+}
+
+.recept-items .item{
+    display: grid;
+    grid-template-columns: 400px 100px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eaeaea;
+    margin-bottom: 15px;
+
+}
+
+.recept-items .item:hover{
+    background-color: #eaeaea;
+    padding-left: 10px;
+}
+
+.item-text{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 10px;
+}
