@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--hier een link naar de stylesheet, style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hier een link naar script.js -->
+    <script src="js/script.js" defer></script>
+    <!-- waarom gebruiken we hier het attribute defer? je kan er volgensmij mee aangeven dat ergens anders in paralel de comand word afgemaakt  vul je antwoord in op de lijn--->
+</head>
+<body>
+
+    <div>
+        <button onclick="getName('Mats');">klik op de button</button> 
+        <!-- vul eens je eigen naam in waar nu staat: vul je naam in hier, echt doen!, wat gebeurd er dan? mijn naam komt daar te staan vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p>Klik een paar keer op het plaatje hieronder</p>
+        <img id="hide" onclick="hideMe();" src="images/item-1.png">
+        <!-- Welke functie wordt hierboven aangeroepen? als je hierop klikt word het plaatje onzichtbaar tot er weer op word geclikt vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <img id="show" onclick="show();" src="images/item-2.png">
+        <!-- Welke functie wordt hierboven aangeroepen? Dit vervangt het andere plaatje door aleenmaar zichtbaar te zijn waneer je er op klikt vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+    </div>
+
+    <div>
+        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
+        <!-- wat wordt de content van de p hierboven als ik op de button hieronder klik? dan gaat deze text weg vul je antwoord in op de lijn-->
+        <button onclick="rekenen(4);">Bereken, klik op mij!</button>
+        <!-- Welke functie wordt hierboven aangeroepen? Berekenen van een som vul je antwoord in op de lijn en bekijk in script.js wat er gebeurd en vul daar ook een antwoord in-->
+        <!-- wat gebeurd er als je het getal 5 hierboven in een ander getal verandert, probeer dat eens  (refresh wel even je pagina). het andwoord veranderd ook vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? ja er is een onklick en als je er op klikt veranderd de kleur vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er met de tekst in het element p? de kleur veranderd vul je antwoord in op de lijn -->
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'orange', '30');">Klik ook op mij!</p> 
+        <!-- wordt hier een functie aangeroepen? De groote veranderd en de kleur vul ja of nee op de lijn in-->
+        <!-- wat gebeurd er als ik px vergeet bij 30px (probeer het eens) dan komt er een bug die zorgd dat de grote niet veranderd vul je antwoord in op de lijn -->
+    </div>
+    
+</body>
+</html>
