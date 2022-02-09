@@ -21,6 +21,7 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0 auto;
     max-width: 1795px ;
+    margin-bottom: 30px;
 }
 
 header{
@@ -164,9 +165,10 @@ background-position:center bottom;
     margin: 60px 0;
 }
 
-.aboutme-image img{
+.selfie-image img{
     width: 485px;
     height: auto;
+    margin-right: 20px;
 }
 
 .modules-image{
@@ -178,12 +180,12 @@ background-position:center bottom;
     width: 700px;
     height: auto;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 #module-image-twee{
     width: 500px;
     height: 500px;
-    margin-bottom: 10px;
 }
 
 
