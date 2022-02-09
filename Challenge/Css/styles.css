@@ -153,7 +153,6 @@ background-position:center bottom;
 }
 
 .description{
-    width: 50%;
     margin-right: 70px;
 }
 
@@ -171,21 +170,36 @@ background-position:center bottom;
     margin-right: 20px;
 }
 
+.home-image img{
+    width: 700px;
+    height: 515px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
 .modules-image{
+    max-width: 300px;
     display:flex;
-    flex-direction: row;
 }
 
 #module-image-een{
     width: 700px;
     height: auto;
-    margin-right: 10px;
     margin-bottom: 10px;
+    margin-right: 10px;
 }
 
 #module-image-twee{
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 700px;
+    margin-right: 10px;
+    display: flex;
+    align-content: flex-end;
+}
+
+#module-image-drie{
+    width: 400px;
+    height: 324px;
 }
 
 
@@ -213,4 +227,8 @@ background-position:center bottom;
     flex-direction: column;
     justify-content: center;
     margin-right: 10px;
+}
+
+.module-text{
+    max-width: 300px;
 }
